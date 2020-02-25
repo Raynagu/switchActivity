@@ -11,8 +11,9 @@ class ShowMessage : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_show_message)
 
+        // get the data from intent
         val msg = intent?.extras?.get(MainActivity.KEY_MESSAGE)
-
+        // show the received string in text view
         text_showMessage.text = "hey $msg"
 
     }

@@ -16,10 +16,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // store the entered text into local variable
         val message = edit_message.text
+
         btn_send_message.setOnClickListener {
+            //prepare the intent
             val intent = Intent(this, ShowMessage::class.java)
+            //store the string data into intent
             intent.putExtra(KEY_MESSAGE, message)
+            //call startActivity() to move to the next activity/screen
             startActivity(intent)
 
             Toast.makeText(this, "message: $message", Toast.LENGTH_SHORT).show()
