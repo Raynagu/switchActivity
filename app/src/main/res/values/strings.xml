@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">switchActivity</string>
+    <string name="edit_message_hint">Enter your message here.!</string>
+    <string name="btn_send_message">Send message</string>
+</resources>
